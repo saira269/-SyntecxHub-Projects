@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #fff;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url("bg.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #ff305b;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* ================= ABOUT SECTION ================= */
+.about {
+    padding: 70px 10%;
+    background: #111;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.about-box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-box img {
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-box .text {
+    max-width: 450px;
+    text-align: left;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    padding: 60px 10%;
+    background: #000;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .about-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-box .text {
+        text-align: center;
+    }
+}
